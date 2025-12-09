@@ -1,0 +1,21 @@
+from quick_sort import quick_sort
+from bubble_sort import bubble_sort
+
+def main():
+
+    raw = input("ป้อนตัวเลขที่ต้องการเรียงลำดับ (คั่นด้วยช่องว่าง): ")
+    qrr =list(map(int, raw.split()))
+
+    choice = input("เลือกวิธีการเรียงลำดับ (QuickSort/ Bubble): ").lower()
+
+    if choice == "quicksort":
+        quick_sort(qrr, 0, len(qrr) - 1)
+        print("ผลลัพธ์การเรียงลำดับด้วย QuickSort:", qrr)
+    elif choice == "bubble":
+        result = bubble_sort(qrr)
+        print("ผลลัพธ์การเรียงลำดับด้วย Bubble Sort:", result)
+    else:
+        print("วิธีการเรียงลำดับที่เลือกไม่ถูกต้อง")
+
+if __name__ == "__main__":
+    main()
