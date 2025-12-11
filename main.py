@@ -12,8 +12,8 @@ def main():
         quick_sort(arr, 0, len(arr) - 1)
         print("ผลลัพธ์การเรียงลำดับด้วย QuickSort:", arr)
     elif choice == "bubble":
-        result = bubble_sort(arr)
-        print("ผลลัพธ์การเรียงลำดับด้วย Bubble Sort:", result)
+        bubble_sort(arr)
+        print("ผลลัพธ์การเรียงลำดับด้วย Bubble Sort:", arr)
     else:
         print("วิธีการเรียงลำดับที่เลือกไม่ถูกต้อง")
 
