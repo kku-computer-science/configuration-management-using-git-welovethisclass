@@ -4,15 +4,15 @@ from bubble_sort import bubble_sort
 def main():
 
     raw = input("ป้อนตัวเลขที่ต้องการเรียงลำดับ (คั่นด้วยช่องว่าง): ")
-    qrr =list(map(int, raw.split()))
+    arr =list(map(int, raw.split()))
 
     choice = input("เลือกวิธีการเรียงลำดับ (QuickSort/ Bubble): ").lower()
 
     if choice == "quicksort":
-        quick_sort(qrr, 0, len(qrr) - 1)
-        print("ผลลัพธ์การเรียงลำดับด้วย QuickSort:", qrr)
+        quick_sort(arr, 0, len(arr) - 1)
+        print("ผลลัพธ์การเรียงลำดับด้วย QuickSort:", arr)
     elif choice == "bubble":
-        result = bubble_sort(qrr)
+        result = bubble_sort(arr)
         print("ผลลัพธ์การเรียงลำดับด้วย Bubble Sort:", result)
     else:
         print("วิธีการเรียงลำดับที่เลือกไม่ถูกต้อง")
