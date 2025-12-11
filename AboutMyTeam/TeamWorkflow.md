@@ -9,5 +9,11 @@
 - Member คนที่ 3 นายวีรภัทร แก้วคำลา ทำหน้าที่ทำ Main สำหรับรัน Command Main.py 
 
 # ขั้นตอนการทำงาน
-- 
-- 
+1. สมาชิกแต่ละคนสร้าง Branch ของตัวเอง และเพิ่มชื่อเข้า TeamWorkflow.md ใน folder AboutMyTeam โดยทำการ `git checkout -b <branch-name>`
+2. สมาชิกคนแรก นายธนทัต ภู่แก้ว เขียน Algorithm Quick Sort ใน Branch ของตัวเอง 
+3. สมาชิกคนที่สาม นายวีรภัทร แก้วคำลา เขียน Main สำหรับการเรียกใช้งาน Algorithm ทั้งสองที่ Branch ของตัวเอง
+4. สมาชิกคนที่สามทำการ Merge Quick Sort และ Main เข้า Branch Main โดยใช้ `git merge` และถ้ามี conflict ต้องแก้ไขให้ถูกต้อง
+5. สมาชิกคนที่สอง นายพสิษฐ์ ผลวิเศษพรสุข เขียน Algorithm Bubble Sort ใน Branch ของตัวเอง
+6. สมาชิกคนที่สองทำการ Merge Bubble Sort เข้า Branch Main โดยใช้ `git merge` และถ้ามี conflict ต้องแก้ไขให้ถูกต้อง
+7. สมาชิกคนที่สองแก้ไขการเรียก function bubble sort ใน main เนื่องจากครั้งแรกทำงานไม่ถูกต้อง
+8. สมาชิกทุกคนตรวจสอบความถูกต้อง
