@@ -12,7 +12,11 @@ def main():
     if choice == 1:
         quick_sort(arr, 0, len(arr) - 1)
         print("ผลลัพธ์การเรียงลำดับด้วย QuickSort:", arr)
+<<<<<<< HEAD
     elif choice == 2:
+=======
+    elif choice == "bubble":
+>>>>>>> refs/remotes/origin/main
         bubble_sort(arr)
         print("ผลลัพธ์การเรียงลำดับด้วย Bubble Sort:", arr)
     else:
