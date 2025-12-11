@@ -6,14 +6,15 @@ def main():
     raw = input("ป้อนตัวเลขที่ต้องการเรียงลำดับ (คั่นด้วยช่องว่าง): ")
     arr =list(map(int, raw.split()))
 
-    choice = input("เลือกวิธีการเรียงลำดับ (QuickSort/ Bubble): ").lower()
+    i = input("เลือกวิธีการเรียงลำดับ QuickSort (1)/ Bubble(2): ")
+    choice = int(i)
 
-    if choice == "quicksort":
+    if choice == 1:
         quick_sort(arr, 0, len(arr) - 1)
         print("ผลลัพธ์การเรียงลำดับด้วย QuickSort:", arr)
-    elif choice == "bubble":
-        result = bubble_sort(arr)
-        print("ผลลัพธ์การเรียงลำดับด้วย Bubble Sort:", result)
+    elif choice == 2:
+        bubble_sort(arr)
+        print("ผลลัพธ์การเรียงลำดับด้วย Bubble Sort:", arr)
     else:
         print("วิธีการเรียงลำดับที่เลือกไม่ถูกต้อง")
 
